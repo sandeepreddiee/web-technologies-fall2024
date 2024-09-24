@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sandeep's Lab 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+        .bungee-tint-regular {
+            font-family: "Bungee Tint", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .Nav-Section {
+            color: black;
+            text-align: center;
+            padding: 10px;
+            width: 900px;
+            margin-left: 25px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px 10px #888888;
+            margin-bottom: 20px;
+        }
+        .Main-Section, .who-is-watching, .skillset {
+            color: black;
+            padding: 10px;
+            width: 900px;
+            margin-left: 25px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px 10px #888888;
+        }
+        .Nav-Section ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: right;
+            gap: 30px;
+            margin-top: 150px;
+        }
+        #profile-photo {
+            border-radius: 50%;
+        }
+        .button {
+            display: inline-block;
+            outline: none;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 14px 24px;
+            border: none;
+            transition: box-shadow 0.2s ease, transform 0.1s ease;
+            background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+            color: #fff;
+        }
+        h1, h3, h4, h5 {
+            font-family: 'Bungee Tint', cursive;
+            color: black;
+        }
+        h3, h4, h5 {
+            font-size: 20px;
+        }
+        .Nav-Section, .Main-Section, .who-is-watching, .skillset, .floating-contact-section {
+            background-image: linear-gradient(90deg, #ff9a9e 0%, #fecfef 100%);
+        }
+        .Nav-Section {
+            background-image: url('./slu-image.jpg');
+        }
+        .styled-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .styled-link:hover {
+            background-color: #0056b3;
+        }
+        .floating-contact-section {
+            position: absolute;
+            top: 100px;
+            right: 10px;
+            background-color: #f8f9fa;
+            padding: 10px;
+            width: 270px; 
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; 
+            overflow: hidden; 
+        }
+        .skillset table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        .skillset th, .skillset td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        .skillset th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .skillset tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .skillset td {
+            color: #555;
+        }
+
+        .skillset tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="Nav-Section">
+        <img id="profile-photo" src="./Photo2.jpeg" alt="Sai Sandeep Reddy Gandluri" height="220px" width="220px">
+        <ul>
+            <li><a href="" class="styled-link">About</a></li>
+            <li><a href="https://github.com/" target="_blank" class="styled-link">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/sandeepreddiee/" target="_blank" class="styled-link">Linkedin</a></li>
+            <li><a href="" target="_blank" class="styled-link">Contact</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="Main-Section">
+        <h1>Sandeep Reddy</h1>
+        <h3>Software Engineer</h3>
+        <hr>
+        <div class="About-Section">
+            <h4><center>About Me</center></h4>
+            <pre>
+                <blockquote>
+                    "The only way to do great work is to love what you do." - Steve Jobs
+                </blockquote>
+                👨‍🎓 M.S. in Computer Science Candidate
+                🌟 Full Stack Developer | Java, React, Spring
+                🤖 Machine Learning Aficionado
+
+                💼 Experienced in backend development, microservices architecture.
+                📧 gandluri.sandeepreddy@gmail.com | 📞 +13143990987
+            </pre>
+        </div>
+    </div>
+    <br>
+    <div class="who-is-watching">
+        <form>
+            <label for="viewer">Who is viewing my portfolio?</label>
+            <select id="viewer" name="viewer">
+                <option value="professor">Professor</option>
+                <option value="student">Student</option>
+                <option value="recruiter">Recruiter</option>
+            </select>
+        </form>
+    </div>
+    <br>
+    <div class="skillset">
+        <table>
+            <tr>
+                <th>Technologies</th>
+                <th>Cloud</th>
+                <th>Tools</th>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>AWS</td>
+                <td>IntelliJ</td>
+            </tr>
+            <tr>
+                <td>Spring Boot</td>
+                <td>Azure</td>
+                <td>VS Code</td>
+            </tr>
+            <tr>
+                <td>ReactJS</td>
+                <td>GCP</td>
+                <td>Postman</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="floating-contact-section">
+        <h3>Contact Me</h3>
+        <h5>Email: saisandeep@slu.edu</h5>
+        <h4>Phone: +13143990987</h5>
+        <p>Feel free to reach out</p>
+    </div>
+</body>
+</html>
